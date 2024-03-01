@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>text</title>
+    </head>
+    <body>
+        <input type="text0" id="uname"/><br>
+        <button id="setdata">设置用户名</button>
+        <button id="getdata">设置密码</button>
+        <button id="deldata">删除密码</button>
+        <script>
+            var uname=document.getElementById("uname");
+            document.querySelector("#setdte").onclick=function()
+            {
+                //给变量赋文本框的值，变量名为unameV
+                var unameV=uname.value;
+                //给本地储存设置名字为username,值为文本框输入的值
+                localStorage.setItem("username",unameV);
+                //在控制台进行显示
+                console.log(unameV);
+            }
+            console.log(uname);  
+        </script>
+    </body>
+</html>
